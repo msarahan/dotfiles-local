@@ -2,3 +2,5 @@
     name = Michael Sarahan
     email = msarahan@gmail.com
 
+[commit]
+    gpgsign = true
