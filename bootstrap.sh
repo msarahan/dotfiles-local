@@ -2,6 +2,7 @@ gpg2 --import pubkey.asc
 
 mkdir -p ~/.gnupg
 cp ./gpg-agent.conf ~/.gnupg/gpg-agent.conf
+echo D2ADA33B8E6147506BDC042618C79DCC59C89B6D >> ~/.gnupg/sshcontrol
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
