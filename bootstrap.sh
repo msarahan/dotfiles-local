@@ -4,6 +4,12 @@ mkdir -p ~/.gnupg
 cp ./gpg-agent.conf ~/.gnupg/gpg-agent.conf
 echo D2ADA33B8E6147506BDC042618C79DCC59C89B6D >> ~/.gnupg/sshcontrol
 
+# NOTE: if ssh key stops working, may be a problem with gpg agent:
+# https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=835394
+# run 
+#   gpg-connect-agent updatestartuptty /bye 
+# to reset it
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # https://github.com/thoughtbot/dotfiles
